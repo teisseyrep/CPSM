@@ -19,7 +19,7 @@ It is possible to choose a classifier (logistic regression or neural network) an
 
 ## Basic Structure of the module ##
 
-1. 'CPSM.cpsm' module contains implementation of the proposed method.
-2  'DNN.dnn' module  contains implementation of the neural network used in the experiments.
-3.  File artificial.py contains the function which generates artifical dataset.
-4.  File logistic.py contains our implementation of optimization of the parameters of q(y=1|z). This is required in the M-step of EM algorithm described in the paper.
+1. ``CPSM.cpsm`` module contains implementation of the proposed method.
+2  ``DNN.dnn`` module  contains implementation of the neural network used in the experiments.
+3.  File ``artificial.py`` contains the function which generates artifical dataset.
+4.  File ``logistic.py`` contains our implementation of optimization of the parameters of $q(y=1|z)$. This is required in the M-step of EM algorithm described in the paper.
