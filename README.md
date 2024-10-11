@@ -16,11 +16,16 @@ The artificial datasets can be generated as described in the paper, using the fu
 ## Experiments ##
 
 The file ``experiment_artificial.py`` contains code to run experiments for artificial datasets. 
-It is possible to choose a classifier (logistic regression or neural network) and set various parameters needed to generate the artificial set. The scripts outputs balanced accuracy and approximation error for the proposed CPSM metod as well as for the naive method. If you use DNN classifier, you can change the network architecture in the DNN module.
+It is possible to choose a classifier (logistic regression or neural network) and set various parameters needed to generate the artificial dataset. The scripts outputs balanced accuracy and approximation error for the proposed CPSM metod as well as for the naive method. If you use DNN classifier, you can change the network architecture in the DNN module.
 
 ## Basic Structure of the module ##
 
 1. ``CPSM.cpsm`` module contains implementation of the proposed method.
 2  ``DNN.dnn`` module  contains implementation of the neural network used in the experiments.
-3.  File ``artificial.py`` contains the function which generates artifical dataset.
-4.  File ``logistic.py`` contains our implementation of optimization of the parameters of $q(y=1|z)$. This is required in the M-step of EM algorithm described in the paper.
+
+## Contact
+
+If you have any questions or issues, please reach out via my email:
+
+> teisseyrep AT ipipan DOT waw DOT pl
+
