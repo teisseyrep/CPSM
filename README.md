@@ -20,10 +20,8 @@ It is possible to choose a classifier (logistic regression or neural network) an
 
 ## Basic Structure of the module ##
 1. ``CPSM.cpsm`` module contains implementation of the proposed method.
-
-2  ``DNN.dnn`` module  contains implementation of the neural network used in the experiments.
-
-3  ``NAIVE.naive`` module  contains implementation of the naive method.
+2.  ``DNN.dnn`` module  contains implementation of the neural network used in the experiments.
+3.  ``NAIVE.naive`` module  contains implementation of the naive method.
 
 
 
