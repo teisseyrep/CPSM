@@ -19,7 +19,6 @@ The file ``experiment_artificial.py`` contains code to run experiments for artif
 It is possible to choose a classifier (logistic regression or neural network) and set various parameters needed to generate the artificial dataset. The scripts outputs balanced accuracy and approximation error for the proposed CPSM metod as well as for the NIAVE method in which a classification model is trained on the source data and applied to the target data without any corrections. If you use DNN classifier, you can change the network architecture in the DNN module.
 
 ## Basic Structure of the module ##
-
 1. ``CPSM.cpsm`` module contains implementation of the proposed method.
 
 2  ``DNN.dnn`` module  contains implementation of the neural network used in the experiments.
