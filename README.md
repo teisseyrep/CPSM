@@ -1,6 +1,7 @@
 # CPSM
 
-This is the repository for the paper "Probabilistic classification when  conditional distribution of labels between source and target domains is shifted".
+This is the repository for the paper 
+>Probabilistic classification when  conditional distribution of labels between source and target domains is shifted.
 
 ## Abstract ##
 
@@ -10,7 +11,7 @@ The effectiveness of CPSM is demonstrated through experiments on synthetic datas
 
 ## Data ##
 
-The artificial datasets can be generated as described in the paper, using the function ''generate_artificial_data'' in the file 'artificial.py'. The user can change various parameters, such as: number of observations, number of features x, number of features z, class priors p(y=1),  q(y=1) and parameter k.  Due to licensing reasons we cannot release the MIMIC dataset and therefore we only provide the code to run experiments on artificial data.
+The artificial datasets can be generated as described in the paper, using the function ``generate_artificial_data`` in the file ``artificial.py``. The user can change various parameters, such as: number of observations, number of features x, number of features z, class priors p(y=1),  q(y=1) and parameter k.  Due to licensing reasons we cannot release the MIMIC dataset and therefore we only provide the code to run experiments on artificial data.
 
 ## Experiments ##
 
