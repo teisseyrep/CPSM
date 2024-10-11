@@ -1,7 +1,7 @@
 # CPSM
 
 This is the repository for the paper 
->Probabilistic classification when  conditional distribution of labels between source and target domains is shifted.
+>Paweł Teisseyre, Jan Mielniczuk, Probabilistic classification when conditional distribution of labels between source and target domains is shifted.
 
 ## Abstract ##
 
@@ -11,12 +11,15 @@ The effectiveness of CPSM is demonstrated through experiments on synthetic datas
 
 ## Data ##
 
-The artificial datasets can be generated as described in the paper, using the function ``generate_artificial_data`` in the file ``artificial.py``. The user can change various parameters, such as: number of observations, number of features x, number of features z, class priors p(y=1),  q(y=1) and parameter k.  Due to licensing reasons we cannot release the MIMIC dataset and therefore we only provide the code to run experiments on artificial data.
+The artificial datasets can be generated as described in the paper, using the function ``generate_artificial_data`` in the file ``artificial.py``. The user can change various parameters, such as number of observations, number of features x, number of features z, class priors p(y=1), q(y=1) and parameter k.
+The function generates both source (train) and target (test) datasets.
+
+Due to licensing reasons we cannot release the MIMIC dataset and therefore we only provide the code to run experiments on artificial data.
 
 ## Experiments ##
 
-The file ``experiment_artificial.py`` contains code to run experiments for artificial datasets. 
-It is possible to choose a classifier (logistic regression or neural network) and set various parameters needed to generate the artificial dataset. The scripts outputs balanced accuracy and approximation error for the proposed CPSM metod as well as for the NIAVE method in which a classification model is trained on the source data and applied to the target data without any corrections. If you use DNN classifier, you can change the network architecture in the DNN module.
+The file ``experiment_artificial.py`` contains the code to run experiment for artificial dataset. 
+It is possible to choose a base classifier (logistic regression or neural network) and set various parameters needed to generate the artificial dataset. The scripts outputs balanced accuracy and approximation error calculated on the target (test) data, for the proposed CPSM metod as well as for the NAIVE method in which a classification model is trained on the source data and applied to the target data without any corrections. If you use DNN classifier, you can change the network architecture in the DNN module.
 
 ## Basic Structure of the module ##
 1. ``CPSM.cpsm`` module contains implementation of the proposed method.
