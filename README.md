@@ -30,7 +30,7 @@ The file ``exp1_mimic.py`` contains the code to run experiments for MIMIC datase
 4.  ``SEES.sees`` module  contains implementation of the SEES method.
 5.  ``ET.et`` module  contains implementation of the ET method.
 
-Examples
+Example
 --------
 ```python
 import numpy as np
@@ -60,7 +60,7 @@ k = 5
 clf_name='' #logistic
 #clf_name = 'dnn'
 
-#Genertate artificial data:
+#Generate artificial data:
 Y_train, Y_test, X_train, X_test, Z_train, Z_test, Xall_train, Xall_test = generate_artificial_data1(n,p,pz,pi_p=pi_p,pi_q=pi_q,k=k)
            
 #ORACLE METHOD:
