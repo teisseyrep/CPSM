@@ -14,18 +14,21 @@ The effectiveness of CPSM is demonstrated through experiments on synthetic datas
 The artificial datasets can be generated as described in the paper, using the function ``generate_artificial_data1`` and ``generate_artificial_data2`` in the file ``artificial.py``. The user can change various parameters, such as number of observations, number of features x, number of features z, class priors p(y=1), q(y=1) and parameter k.
 The function generates both source (train) and target (test) datasets.
 
-Due to licensing reasons we cannot release the MIMIC dataset and therefore we only provide the code to run experiments on artificial data.
+The MIMIC dataset is available at \url{https://physionet.org/content/mimiciii/1.4/}
 
 ## Experiments ##
 
-The file ``experiment_artificial.py`` contains the code to run experiment for artificial dataset. 
-It is possible to choose a base classifier (logistic regression or neural network) and set various parameters needed to generate the artificial dataset. The scripts outputs balanced accuracy and approximation error calculated on the target (test) data, for the proposed CPSM metod as well as for the NAIVE method in which a classification model is trained on the source data and applied to the target data without any corrections. If you use DNN classifier, you can change the network architecture in the DNN module.
+The files ``exp1_artificial.py`` and ``exp2_artificial.py`` contain the code to run experiments for artificial dataset. 
+The file ``exp1_mimic.py`` contains the code to run experiments for MIMIC dataset. 
 
 ## Basic Structure of the module ##
 1. ``CPSM.cpsm`` module contains implementation of the proposed method.
 2.  ``DNN.dnn`` module  contains implementation of the neural network used in the experiments.
 3.  ``NAIVE.naive`` module  contains implementation of the naive method.
-
+3.  ``EM.em`` module  contains implementation of the MLLS method, which is based on EM algorithm.
+3.  ``BBSC.bbsc`` module  contains implementation of the BBSC method.
+4.  ``SEES.sees`` module  contains implementation of the SEES method.
+5.  ``ET.et`` module  contains implementation of the ET method.
 
 Examples
 --------
