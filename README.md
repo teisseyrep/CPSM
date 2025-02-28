@@ -14,7 +14,7 @@ The effectiveness of CPSM is demonstrated through experiments on synthetic datas
 The artificial datasets can be generated as described in the paper, using the function ``generate_artificial_data1`` and ``generate_artificial_data2`` in the file ``artificial.py``. The user can change various parameters, such as number of observations, number of features x, number of features z, class priors p(y=1), q(y=1) and parameter k.
 The function generates both source (train) and target (test) datasets.
 
-The MIMIC dataset is available at \url{https://physionet.org/content/mimiciii/1.4/}
+The MIMIC dataset is available at https://physionet.org/content/mimiciii/1.4/
 
 ## Experiments ##
 
