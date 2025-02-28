@@ -32,33 +32,6 @@ def logistic_optimize(X,Y,lr=0.01,epochs=1000,lam=0):
 
 
 
-# Fit logistic regression:
-
-# n = 1000
-# p = 10
-# X = np.zeros((n,p))
-# for j in np.arange(p):
-#     X[:,j] = np.random.normal(0,1,n)
-    
-# Y = np.zeros(n)
-# probs = sigma(np.dot(X,np.repeat(1,p)))
-# Y = np.random.binomial(1, probs, size=n)    
-    
-# from logistic import logistic_optimize
-
-# theta, risk, probs = logistic_optimize(X, Y,epochs=1000,lr=0.1)
-
-# import matplotlib
-# matplotlib.style.use('ggplot')
-# import matplotlib.pyplot as plt
-
-# plt.figure(figsize=(10, 7))
-# plt.plot(risk, color='orange', label='train loss')
-# plt.xlabel('Epochs')
-# plt.ylabel('Loss')
-# plt.legend()    
-
-
 def multinomial_grad(X1,probs,Ym,lam,theta):
     n = X1.shape[0]
     p = X1.shape[1]
@@ -93,9 +66,7 @@ def multinomial_optimize(X,Ym,lr=0.01,epochs=1000,lam=0):
         for k in np.arange(K):
             probs[:,k] = eta[:,k] /eta_sum
         
-            
-        #for i in np.arange(n):
-        #    probs[i,:] = softmax(eta[i,:])
+
     
         risk_current = -np.mean( np.sum(Ym*np.log(probs),1) )
         risk.append(risk_current)
